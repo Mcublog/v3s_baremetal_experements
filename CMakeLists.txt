@@ -17,6 +17,7 @@ add_executable(hello.elf
     src/uart.c
     src/delay.c
     src/ephy.c
+    src/lradc.c
 )
 
 target_include_directories(hello.elf PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
