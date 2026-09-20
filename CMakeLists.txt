@@ -26,6 +26,7 @@ target_link_options(hello.elf PRIVATE
     -T ${CMAKE_CURRENT_SOURCE_DIR}/link.ld
     -nostdlib
     -Wl,--build-id=none
+    -Wl,--print-memory-usage
 )
 
 set(BIN_FILE ${CMAKE_CURRENT_BINARY_DIR}/hello.bin)
